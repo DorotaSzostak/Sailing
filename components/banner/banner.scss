@@ -1,0 +1,39 @@
+.banner {
+    position: relative;
+    bottom: -85%;
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    @include mQ(485px){
+            width: 100%;
+            display: block;
+            bottom: -80%;
+    }
+    .banner__text {
+        display: flex;
+        flex: 1 1 200px;
+        flex-flow: row;
+        align-items: center;
+        @include mQ(780px){
+            img {
+                width: 10%;
+            }
+        }
+    
+    h2 {
+       padding-left: 5%;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: bold;
+        letter-spacing: 1px;
+        @include mQ(780px) {
+            font-size: 12px;
+        }
+    }
+}
+}
+
+
+
+
