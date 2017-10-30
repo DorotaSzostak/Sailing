@@ -2,16 +2,13 @@
     background-color: rgba(255, 255, 255, 0.86);
     width: 100%;
     position: fixed; 
+    z-index: 1;
     &:after {
         @include clearfix;
     }
 }
 
-.container {
-    max-width: 1600px;
-    width: 80%;
-    margin: 0 auto; 
-}
+
 
 .nav__logo {
     float: left;
@@ -32,18 +29,23 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    @include mQ(485px){
+    @include mQ(425px){
         display: block;
         width: 100%;
     }
+   
     ul {
         padding-top: 20px;
         padding-bottom: 10px;
-       @include mQ(485px){
+       @include mQ(768px){
         display: block;
         width: 100%;
            li {
                padding: 10px;
+               text-align: center;
+           }
+           a:hover {
+               color: red;
            }
     }
     }
@@ -62,6 +64,9 @@
         color:  rgba(30, 30, 30, 255);
         font-weight: bold;
         letter-spacing: 1px;
+          @include mQ(1200px){
+        font-size: 12px;
+    }
     }
 }
 
@@ -69,6 +74,13 @@
     display: flex;
     flex: 3 1 0;
     justify-content: flex-end;
+    @include mQ(485px){
+        li {
+        display: inline-block;
+        width: 20%; 
+             }
+        
+    }
     li {
         padding-left: 30px;
     }

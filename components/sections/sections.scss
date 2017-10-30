@@ -1,0 +1,13 @@
+section {
+    padding-top: 20px;
+    
+    .section__title {
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $title_red;
+        padding: 10px;
+        border-bottom: 1px solid grey;
+        margin-bottom: 10px;
+    }
+}

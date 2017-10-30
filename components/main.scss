@@ -2,6 +2,8 @@
 
 @import "../tools/reset";
 @import "../tools/mixins";
+@import "../tools/container";
+@import "../tools/colors";
 
 
 
@@ -10,3 +12,6 @@
 @import "nav/nav";
 @import "banner/banner";
 @import "header/header";
+@import "sections/sections";
+@import "wydarzenia/wydarzenia";
+@import "video__slider/video__slider";
