@@ -29,6 +29,9 @@ body {
 ol, ul {
   list-style: none; }
 
+a {
+  text-decoration: none; }
+
 blockquote, q {
   quotes: none; }
   blockquote:before, q:before {
@@ -164,6 +167,11 @@ input {
   -webkit-justify-content: flex-end;
   -ms-flex-pack: end;
   justify-content: flex-end; }
+  .nav__language-items li {
+    background-color: #e50613;
+    padding: 6px 8px; }
+    .nav__language-items li a {
+      color: #fff; }
 
 .banner {
   position: relative;
@@ -219,8 +227,55 @@ header {
   height: 80vh;
   width: 100%; }
 
+.news-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 20px; }
+  @media screen and (max-width: 485px) {
+    .news-box {
+      padding: 2px; } }
+  .news-box .news-box__item {
+    background-image: url(../components/news__box/src/male1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 230px;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 280px;
+    -ms-flex: 1 0 280px;
+    flex: 1 0 280px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 5px; }
+    .news-box .news-box__item .news-box__lebel {
+      float: right;
+      background-color: #e50613;
+      padding: 4px;
+      margin-top: 3%;
+      margin-right: 3%;
+      color: #fff;
+      font-size: 0.7em; }
+    .news-box .news-box__item .news-box__item--text {
+      position: relative;
+      top: 80%;
+      background-color: rgba(0, 0, 0, 0.43);
+      color: #fff;
+      padding: 1.5%;
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 120%;
+      border-top: 2px solid #fff; }
+
 section {
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 50px; }
   section .section__title {
     font-size: 18px;
     font-weight: bold;
@@ -230,25 +285,66 @@ section {
     border-bottom: 1px solid grey;
     margin-bottom: 10px; }
 
+.wydarzenia {
+  background-color: #f0f0f0; }
+
+.text-box {
+  float: left;
+  width: 30%;
+  border: 2px solid #dedddd;
+  background-color: #fff;
+  margin-top: 25px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  display: block;
+  clear: both; }
+  @media screen and (max-width: 485px) {
+    .text-box {
+      display: block;
+      width: 100%; } }
+  .text-box .text-box__list {
+    padding: 20px; }
+    @media screen and (max-width: 485px) {
+      .text-box .text-box__list {
+        padding: 10px; } }
+    .text-box .text-box__list li {
+      font-size: 16px;
+      padding-bottom: 5px;
+      padding-top: 5px;
+      border-bottom: 2px solid #dedddd;
+      font-weight: bold; }
+      .text-box .text-box__list li span {
+        border: 1px solid #e50613;
+        background-color: #e50613;
+        color: #fff;
+        font-weight: 100;
+        font-size: 0.6em;
+        padding: 0 6px;
+        float: right; }
+      @media screen and (max-width: 768px) {
+        .text-box .text-box__list li {
+          font-size: 12px; } }
+
 .video__slider {
   width: 100%; }
   .video__slider .slider-nav {
     overflow-x: hidden;
-    width: 90%;
+    width: 100%;
     margin: 0 auto; }
     @media screen and (max-width: 485px) {
       .video__slider .slider-nav div {
         display: block;
         width: 100%;
         padding-bottom: 20px; } }
-  .video__slider .slider__item--video {
-    width: 90%;
-    margin: 0 auto; }
-    @media screen and (max-width: 485px) {
-      .video__slider .slider__item--video {
-        width: 100%; } }
+    .video__slider .slider-nav .slider__item--video {
+      width: 90%;
+      margin: 0 auto; }
+      @media screen and (max-width: 485px) {
+        .video__slider .slider-nav .slider__item--video {
+          width: 100%; } }
   .video__slider .slider__text--big {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     padding-top: 20px;
@@ -259,13 +355,13 @@ section {
     font-size: 24px; }
     @media screen and (max-width: 485px) {
       .video__slider .slider__text--big {
-        font-size: 14px;
-        width: 100%; } }
+        font-size: 14px; } }
   .video__slider .slider__text--small {
     width: 90%;
     margin: 0 auto;
     font-size: 14px;
     text-align: left;
+    letter-spacing: 1px;
     color: #787878;
     padding-top: 10px;
     padding-bottom: 10px; }

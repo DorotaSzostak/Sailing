@@ -1,0 +1,43 @@
+.wydarzenia {
+    background-color: #f0f0f0;
+}
+
+.text-box {
+    float: left;
+    width: 30%;
+    border: 2px solid #dedddd;
+    background-color: #fff;
+    margin-top: 25px;
+    box-sizing: border-box;
+    @include clearfix;
+    @include mQ(485px){
+        display: block;
+        width: 100%;
+       }
+    
+    .text-box__list {
+        padding: 20px;
+         @include mQ(485px){
+        padding: 10px;
+       }
+    li {
+        font-size: 16px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        border-bottom: 2px solid #dedddd;
+        font-weight: bold;
+        span {
+            border: 1px solid $title_red;
+            background-color: $title_red;
+            color: #fff;
+            font-weight: 100;
+            font-size: 0.6em;
+            padding: 0 6px;float: right;
+        }
+        @include mQ(768px){
+        font-size: 12px;
+       }
+    }
+}
+}
+

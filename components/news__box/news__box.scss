@@ -1,0 +1,39 @@
+.news-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding:  20px;
+      @include mQ(485px){
+       padding: 2px;
+       }
+    .news-box__item {
+        background-image: url(../components/news__box/src/male1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 230px;
+        flex: 1 0 280px;
+        justify-content: space-between;
+        margin: 5px;
+        
+        .news-box__lebel {
+            float: right;
+            background-color: $title_red;
+            padding: 4px;
+            margin-top: 3%;
+            margin-right: 3%;
+            color: #fff;
+            font-size: 0.7em;
+        }
+        .news-box__item--text {
+            position: relative;
+            top: 80%;
+            background-color: rgba(0, 0, 0, 0.43);
+            color: #fff;
+            padding: 1.5%;
+            font-size: 14px;
+            letter-spacing: 1px;
+            line-height: 120%;
+            border-top: 2px solid #fff;
+        }    
+    }
+}
