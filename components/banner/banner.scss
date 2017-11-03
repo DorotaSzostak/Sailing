@@ -7,7 +7,10 @@
     @include mQ(485px){
             width: 100%;
             display: block;
-            bottom: -80%;
+            bottom: -65%;
+        .banner__text {
+            padding: 3px;
+        }
     }
     .banner__text {
         display: flex;

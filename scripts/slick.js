@@ -14,8 +14,10 @@ $('.slider-nav').slick({
   asNavFor: '.slider-for',
   dots: false,
   arrows: true,
-  centerMode: true,
+  centerMode: false,
   focusOnSelect: true
 });
   });
+
+
 

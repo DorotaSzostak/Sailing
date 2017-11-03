@@ -1,0 +1,48 @@
+
+.container__slider {
+    width: 100%;
+    padding-top: 30px;
+.slider__content {
+    
+.slider__content--left {
+    max-width: 50%;
+    display: inline-block;
+    float: left;
+    height: 300px;
+    @include mQ(768px){
+        height: 150px;
+        width: 40%;
+        overflow: hidden;
+        img {
+            height: 150px;
+            width: 50%;
+        }
+    }
+   
+    img {
+        height: 300px;
+        width: 150%;
+    }
+    }
+    .slider__content--right {
+        display: inline-block;
+        float: right;
+        width: 50%;
+        .info__title {
+            font-weight: bold;
+            font-size:20px;
+            color:$title_red;
+            padding-bottom: 5%;
+        } 
+        @include mQ(768px){
+                font-size: 0.8em;
+            .info__title {
+                font-size: 14px;
+            }
+            }
+    }
+     &:after {
+        @include clearfix;
+    }
+}
+}

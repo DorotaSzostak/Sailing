@@ -3,19 +3,27 @@
 <head>
 	<title>Sailing</title>
 	 <meta charset="UTF-8">
+ <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+ <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="external_tools/slick-1.8.0/slick/slick.css">
-    <link rel="stylesheet" type="text/css" href="external_tools/slick-1.8.0/slick/slick-theme.css">
+<link rel="stylesheet" type="text/css" href="external_tools/slick-1.8.0/slick/slick-theme.css">
     </head>
 <body>
     <header>
     <div class="nav">
     <div class="container">
-    
+     <div class="hamburger">
+     <div class="hamburger__icon">
+      <span></span>
+      <span></span>
+      <span></span>
+     </div>
+     </div>
     <a class="nav__logo" href="#"><img src="components/nav/src/logo_icon.png" alt="logo_icon"></a>
     
-    <div class="nav__wrapper">
+    <div class="nav__wrapper" id="nav__mobile">
        <ul class="nav__text-items">
         <li><a class="nav--links"  href="#">Strona główna</a></li>
         <li><a  class="nav--links" href="#">O nas</a></li>
@@ -35,6 +43,7 @@
         <li><a class="nav--links" href="#">PL</a></li>
     </ul>
      </div>
+    
     </div>
      </div>
     
@@ -163,12 +172,73 @@
    <div class="section__title">
        <h2>Opinie:</h2>
    </div>
+   <div class="container__slider">
+   
+   <div class="slider__content">
+    <div class="slider__content--left"><img src="components/slider__content/src/male2.png"></div>
+<div class="slider__content--right"><h2 class="info__title">Żeglowanie zmienia postrzeganie świata</h2>
+    <p class="info__text">In hac habitasse platea dictumst. Vestibulum commodo efficitur ornare. Fusce consequat nec ex a laoreet. Fusce blandit mollis odio, in blandit magna. Nunc consequat at dui eu varius. Morbi a luctus massa, sed porta leo. Praesent eget ultricies risus, ac molestie odio. Maecenas efficitur sed massa suscipit accumsan.</p>
+    </div>
+</div>
+   <div class="slider__content">
+       <div class="slider__content--left"><img src="components/slider__content/src/male2.png"></div>
+<div class="slider__content--right"><h2 class="info__title">Żeglowanie zmienia postrzeganie świata</h2>
+    <p class="info__text">In hac habitasse platea dictumst. Vestibulum commodo efficitur ornare. Fusce consequat nec ex a laoreet. Fusce blandit mollis odio, in blandit magna. Nunc consequat at dui eu varius. Morbi a luctus massa, sed porta leo. Praesent eget ultricies risus, ac molestie odio. Maecenas efficitur sed massa suscipit accumsan.</p>
+    </div>
+        </div>
+   <div class="slider__content">
+       <div class="slider__content--left"><img src="components/slider__content/src/male2.png"></div>
+<div class="slider__content--right"><h2 class="info__title">Żeglowanie zmienia postrzeganie świata</h2>
+    <p class="info__text">In hac habitasse platea dictumst. Vestibulum commodo efficitur ornare. Fusce consequat nec ex a laoreet. Fusce blandit mollis odio, in blandit magna. Nunc consequat at dui eu varius. Morbi a luctus massa, sed porta leo. Praesent eget ultricies risus, ac molestie odio. Maecenas efficitur sed massa suscipit accumsan.</p>
+    </div>
+    </div>
+    </div>
+   
     </div>
 </section>
+
+<footer>
+    <div class="container">
+        <div class="logo">
+            <img class="logo--item" src="components/footer/src/logo_icon.png" alt="logo">
+        </div>
+        <div class="footer__item">
+            <h4>Kontakt</h4>
+            <p>Lorem Ipsum</p>
+            <p>(+48) XXX XXX XXX</p>
+            <p>lorem@ipsum.pl</p>
+            <br>
+            <p>Lorem Ipsum</p>
+            <p>(+48) XXX XXX XXX</p>
+            <p>lorem@ipsum.pl</p>
+        </div>
+        <div class="footer__item">
+            <h4>Adres</h4>
+            <p>ul. Etiudy Rewolucyjnej 44/72</p>
+            <p>02-643 Warszawa</p>
+            <br>
+            <p>NIP:123-345-22-11</p>
+            <p>REGON: 12345789</p>
+        </div>
+        <div class="newsletter">
+            <h4>NEWSLETTER</h4>
+            <p>Zapisz się do newslettera</p>
+            <input class="newsletter--input" type="email" name="email" placeholder="Wpisz swój adres email...">
+            <button class="newsletter--button">OK</button>
+        <div class="newsletter__icons">
+    <a href="#"><img src="components/nav/src/fb_icon.png" alt="facebook_icon"></a>
+    <a href="#"><img src="components/nav/src/yt_icon.png" alt="youtube_icon"></a>
+    <a href="#"><img src="components/nav/src/is_icon.png" alt="instagram_icon"></a>
+        </div>
+        </div>
+    </div>
+</footer>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="external_tools/slick-1.8.0/slick/slick.min.js"></script>
 <script src="scripts/slick.js"></script>
+<script src="scripts/container__slider.js"></script>
+<script src="scripts/nav__mobile.js"></script>
 </body>
 </html>

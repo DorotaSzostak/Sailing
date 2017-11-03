@@ -15,7 +15,7 @@
             
         }
     .slider__item--video{
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         @include mQ(485px){
             width: 100%;
@@ -39,7 +39,7 @@
     }
     
     .slider__text--small {
-        width: 90%;
+        width: 80%;
         margin: 0 auto;
         font-size: 14px;
         text-align: left;
