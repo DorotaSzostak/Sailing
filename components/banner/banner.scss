@@ -1,22 +1,24 @@
 .banner {
+    height: 50vh;
     position: relative;
-    bottom: -85%;
     display: flex;
     width: 80%;
     margin: 0 auto;
     @include mQ(485px){
             width: 100%;
             display: block;
-            bottom: -65%;
         .banner__text {
             padding: 3px;
+            position: relative;
+            top: 60%;
         }
     }
     .banner__text {
         display: flex;
         flex: 1 1 200px;
         flex-flow: row;
-        align-items: center;
+        align-items:flex-end;
+        padding-bottom: 20px;
         @include mQ(780px){
             img {
                 width: 10%;
@@ -24,6 +26,8 @@
         }
     
     h2 {
+        position: relative;
+        top: -20px;
        padding-left: 5%;
         font-size: 20px;
         text-transform: uppercase;
@@ -32,6 +36,7 @@
         letter-spacing: 1px;
         @include mQ(780px) {
             font-size: 12px;
+            top: 0px;;
         }
     }
 }
