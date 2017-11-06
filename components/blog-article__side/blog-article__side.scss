@@ -1,0 +1,42 @@
+.blog-article__side {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 20px 0;
+    justify-content: space-between;
+    .img__container {
+        flex-basis: 30%;
+        background-color: $text_video;
+        height: 300px;
+            .blog-box--img {
+                padding: 60px;
+                display: block;
+                margin: 0 auto;
+            }
+         @include mQ(425px){
+            flex-basis: 100%;
+        }
+    }
+    
+    .blog-article__text {
+        flex-basis: 60%;
+        margin: 0 5px;
+        .blog-article__text--title {
+            font-size: 20px;
+            color: $title_red;
+            font-weight: bold;
+        }
+        .blog-article__text--content {
+            padding-top: 20px;
+            letter-spacing: 1px;
+            line-height: 120%;
+            color: grey;
+        }
+         @include mQ(780px){
+            flex-basis: 50%;
+        }
+        @include mQ(425px){
+            flex-basis: 100%;
+        }
+    }
+}

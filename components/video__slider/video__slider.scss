@@ -1,6 +1,9 @@
 .video__slider {
     width: 100%;
     
+    .slider__item--video {
+        width: 100%;
+    }
     .slider-nav {
         overflow-x: hidden;
         width: 100%;
