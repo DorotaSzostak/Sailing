@@ -15,7 +15,18 @@ $('.slider-nav').slick({
   dots: false,
   arrows: true,
   centerMode: false,
-  focusOnSelect: true
+  focusOnSelect: true,
+    responsive: [
+    {
+      breakpoint: 780,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 3,
+        infinite: true,
+        arrows: true
+      }
+    }
+        ]
 });
   });
 

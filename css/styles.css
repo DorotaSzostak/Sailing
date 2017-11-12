@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Lato";
+  src: url("https://fonts.googleapis.com/css?family=Lato:300,400,700" rel= "stylesheet"); }
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,7 +28,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
-  line-height: 1; }
+  line-height: 1;
+  font-family: "Lato"; }
 
 ol, ul {
   list-style: none; }
@@ -57,6 +62,7 @@ input {
 .nav {
   background-color: rgba(255, 255, 255, 0.86);
   width: 100%;
+  height: 8%;
   position: fixed;
   z-index: 1; }
   .nav:after {
@@ -66,7 +72,7 @@ input {
   .nav .nav__logo {
     float: left;
     padding-right: 60px;
-    padding-top: 10px; }
+    padding-top: 20px; }
     .nav .nav__logo:after {
       content: "";
       display: block;
@@ -92,10 +98,8 @@ input {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
     .nav .nav__wrapper ul {
-      padding-top: 20px;
-      padding-bottom: 10px; }
+      padding-top: 20px; }
       .nav .nav__wrapper ul li {
-        padding: 10px;
         text-align: center; }
       .nav .nav__wrapper ul a:hover {
         color: red; }
@@ -117,6 +121,7 @@ input {
     -webkit-flex: 6 1 0;
     -ms-flex: 6 1 0px;
     flex: 6 1 0;
+    line-height: 200%;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -148,7 +153,7 @@ input {
       .nav .nav__social-items li {
         display: inline-block;
         width: 20%; } }
-    .nav .nav__social-items li {
+    .nav .nav__social-items .nav--links {
       padding-left: 30px; }
   .nav .nav__language-items {
     display: -webkit-box;
@@ -165,7 +170,8 @@ input {
     justify-content: flex-end; }
     .nav .nav__language-items li {
       background-color: #e50613;
-      height: 10px; }
+      height: 10px;
+      padding: 10px; }
       .nav .nav__language-items li a {
         color: #fff; }
   .nav .hamburger {
@@ -313,28 +319,28 @@ footer {
     width: 19%;
     margin-right: 5%;
     line-height: 120%; }
-    @media screen and (max-width: 768px) {
-      footer .logo,
-      footer .footer__item,
-      footer .newsletter {
-        font-size: 0.6em;
-        margin-right: 2%; } }
-    @media screen and (max-width: 425px) {
-      footer .logo,
-      footer .footer__item,
-      footer .newsletter {
-        display: block;
-        width: 100%;
-        font-size: 0.8em;
-        padding-bottom: 10px; }
-        footer .logo .logo__item,
-        footer .footer__item .logo__item,
-        footer .newsletter .logo__item {
-          width: 10%; } }
     footer .logo .logo--item,
     footer .footer__item .logo--item,
     footer .newsletter .logo--item {
       width: 40%; }
+    @media screen and (max-width: 1450px) {
+      footer .logo,
+      footer .footer__item,
+      footer .newsletter {
+        font-size: 0.8em;
+        margin-right: 2%; } }
+    @media screen and (max-width: 768px) {
+      footer .logo,
+      footer .footer__item,
+      footer .newsletter {
+        display: block;
+        font-size: 0.8em;
+        margin-right: 2%;
+        width: 100%; }
+        footer .logo .logo--item,
+        footer .footer__item .logo--item,
+        footer .newsletter .logo--item {
+          width: 10%; } }
     footer .logo h4,
     footer .footer__item h4,
     footer .newsletter h4 {
@@ -342,27 +348,41 @@ footer {
       font-weight: bold;
       padding-bottom: 5px; }
   footer .newsletter {
-    margin-left: 9%;
+    margin-left: 6%;
     margin-right: 0;
-    text-align: right; }
+    text-align: right;
+    width: 20%; }
     footer .newsletter .newsletter--input {
       margin: 10px 0;
-      border: none;
-      padding: 3px;
+      border: 1px solid #d2d2d2;
+      border-right: none;
+      border-radius: 4px;
+      padding: 8px;
       margin-right: -4px; }
     footer .newsletter .newsletter--button {
       color: #fff;
       background-color: #000;
       border: 1px solid #000;
-      padding: 2px 5px; }
+      padding: 8px 12px;
+      border-radius: 4px; }
     footer .newsletter .newsletter__icons {
-      padding: 5px; }
+      padding: 10px 5px; }
       footer .newsletter .newsletter__icons a {
         margin-left: 10px; }
+    @media screen and (max-width: 1450px) {
+      footer .newsletter {
+        font-size: 0.8em;
+        width: 30%; }
+        footer .newsletter .newsletter--input {
+          font-size: 0.9em;
+          padding: 5px; }
+        footer .newsletter .newsletter--button {
+          font-size: 0.9em;
+          padding: 5px; } }
     @media screen and (max-width: 768px) {
       footer .newsletter {
-        margin-left: 2%;
-        width: 25%;
+        margin-left: 0;
+        width: 100%;
         text-align: left; }
         footer .newsletter .newsletter--input {
           font-size: 0.9em;
@@ -371,12 +391,6 @@ footer {
           font-size: 0.9em; }
         footer .newsletter .newsletter__icons img {
           width: 20px; } }
-    @media screen and (max-width: 425px) {
-      footer .newsletter {
-        display: block;
-        width: 100%;
-        font-size: 0.8em;
-        margin-left: 0; } }
   footer:after {
     content: "";
     display: block;
@@ -395,6 +409,7 @@ footer {
     .news-box {
       padding: 2px; } }
   .news-box .news-box__item {
+    position: relative;
     background-image: url(../components/news__box/src/male1.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -404,11 +419,7 @@ footer {
     -webkit-flex: 1 0 280px;
     -ms-flex: 1 0 280px;
     flex: 1 0 280px;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin: 5px; }
+    margin: 10px; }
     .news-box .news-box__item .news-box__lebel {
       float: right;
       background-color: #e50613;
@@ -418,15 +429,26 @@ footer {
       color: #fff;
       font-size: 0.7em; }
     .news-box .news-box__item .news-box__item--text {
-      position: relative;
+      width: 100%;
+      height: 20%;
+      position: absolute;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
       top: 80%;
       background-color: rgba(0, 0, 0, 0.43);
       color: #fff;
       padding: 1.5%;
       font-size: 14px;
       letter-spacing: 1px;
-      line-height: 120%;
-      border-top: 2px solid #fff; }
+      line-height: 120%; }
+      .news-box .news-box__item .news-box__item--text:before {
+        content: "";
+        position: absolute;
+        left: 5%;
+        top: 0;
+        height: 2px;
+        width: 90%;
+        border-top: 2px solid #fff; }
 
 .blog__slider {
   width: 100%; }
@@ -582,8 +604,8 @@ section {
     font-weight: bold;
     text-transform: uppercase;
     color: #e50613;
-    padding: 10px;
-    border-bottom: 1px solid grey;
+    padding: 10px 0;
+    border-bottom: 2px solid #d2d2d2;
     margin-bottom: 10px; }
 
 .container__slider {
@@ -623,6 +645,18 @@ section {
     content: "";
     display: block;
     clear: both; }
+
+.TXT_[body] {
+  font-size: 20px;
+  font-family: "Lato";
+  color: #444343;
+  line-height: 1.4;
+  position: absolute;
+  left: 860.344px;
+  top: 3191.835px;
+  width: 666px;
+  height: 131px;
+  z-index: 39; }
 
 .wydarzenia {
   background-color: #f0f0f0; }
@@ -668,7 +702,8 @@ section {
 .video__slider {
   width: 100%; }
   .video__slider .slider__item--video {
-    width: 100%; }
+    width: 100%;
+    border: 1px solid #d2d2d2; }
   .video__slider .slider-nav {
     overflow-x: hidden;
     width: 100%;
@@ -680,7 +715,8 @@ section {
         padding-bottom: 20px; } }
     .video__slider .slider-nav .slider__item--video {
       width: 80%;
-      margin: 0 auto; }
+      margin: 0 auto;
+      border: none; }
       @media screen and (max-width: 485px) {
         .video__slider .slider-nav .slider__item--video {
           width: 100%; } }
@@ -688,6 +724,8 @@ section {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+    border: 2px solid #d2d2d2;
+    border-top: none;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 10px;

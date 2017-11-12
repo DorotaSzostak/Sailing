@@ -20,6 +20,7 @@
   width: 60px;
   line-height: 20px;
   font-size: 0px;
+  z-index: 2;
   cursor: pointer;
   background: transparent;
   color: grey;

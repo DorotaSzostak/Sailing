@@ -6,14 +6,14 @@
        padding: 2px;
        }
     .news-box__item {
+        position: relative;
         background-image: url(../components/news__box/src/male1.png);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         height: 230px;
         flex: 1 0 280px;
-        justify-content: space-between;
-        margin: 5px;
+        margin: 10px;
         
         .news-box__lebel {
             float: right;
@@ -25,7 +25,10 @@
             font-size: 0.7em;
         }
         .news-box__item--text {
-            position: relative;
+            width: 100%;
+            height: 20%;
+            position: absolute;
+            box-sizing: border-box;
             top: 80%;
             background-color: rgba(0, 0, 0, 0.43);
             color: #fff;
@@ -33,7 +36,15 @@
             font-size: 14px;
             letter-spacing: 1px;
             line-height: 120%;
-            border-top: 2px solid #fff;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 5%;
+                top:0;
+                height: 2px;
+                width: 90%;
+                border-top: 2px solid #fff;
+            }
         }    
     }
 }
