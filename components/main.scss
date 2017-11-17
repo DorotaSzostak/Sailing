@@ -4,6 +4,10 @@
     src: url("https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet");
 }
 
+//Font Awesome
+$fa-font-path: "../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome";
+
 //tools
 
 @import "../tools/reset";
@@ -25,5 +29,6 @@
 @import "blog-article__center/blog-article__center";
 @import "sections/sections";
 @import "slider__content/slider__content";
+@import "table/table";
 @import "wydarzenia/wydarzenia";
 @import "video__slider/video__slider";

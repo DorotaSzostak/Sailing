@@ -1,0 +1,44 @@
+.table__item {
+    margin-top: 50px;
+    border: 2px solid rgb(210, 210, 210);
+    width: 100%;
+    font-size: 1em;
+    td {
+        padding: 2% 3%;
+        border-right: 2px solid rgb(210, 210, 210);
+        width: 20%;
+        box-sizing: border-box;
+        img {
+            float: left;
+            padding-right: 15px;
+        }
+        
+        p {
+            line-height: 150%;
+            font-weight: 300;
+        }
+        .table__item--bold {
+            font-weight: bold;
+        }
+    }
+    
+    & td:last-child {
+        background-color: rgb(240, 240, 240);
+        color: $title_red;
+    }
+    
+    @include mQ(768px){
+        font-size: 0.6em;
+        td {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            border-top: 2px solid rgb(210, 210, 210);
+            border-right: none;
+            padding: 25px 20px;
+        }
+         & td:last-child {
+        padding-bottom: 35px;
+    }
+    }
+}
