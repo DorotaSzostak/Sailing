@@ -59,9 +59,21 @@ footer {
          .newsletter__icons {
              padding: 10px 5px;
              
-             a{
-                 margin-left: 10px;
-             }
+             .nav__links{
+       display: inline-block;
+        margin-left: 10px;
+        border-radius: 50%;
+        background-color: #000;
+        text-align: center;
+        width: 20x;
+        padding: 8px 10px;
+        color: #fff;
+        font-size: 20px;
+        &:hover {
+            background-color: $title_red;
+            color: #fff;
+        } 
+}
          }
            @include mQ(1450px){
             font-size: 0.8em;
