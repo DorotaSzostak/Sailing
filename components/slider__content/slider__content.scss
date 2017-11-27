@@ -5,11 +5,11 @@
 .slider__content {
     
 .slider__content--left {
-    max-width: 50%;
+    max-width: 30%;
     display: inline-block;
     float: left;
     height: 300px;
-    @include mQ(768px){
+    @include mQ(1020px){
         height: 150px;
         width: 40%;
         overflow: hidden;
@@ -34,7 +34,7 @@
             color:$title_red;
             padding-bottom: 5%;
         } 
-        @include mQ(768px){
+        @include mQ(1020px){
                 font-size: 0.8em;
             .info__title {
                 font-size: 14px;
@@ -47,16 +47,3 @@
 }
 }
 
-
-.TXT_[body] {
-  font-size: 20px;
-  font-family: "Lato";
-  color: rgb(68, 67, 67);
-  line-height: 1.4;
-  position: absolute;
-  left: 860.344px;
-  top: 3191.835px;
-  width: 666px;
-  height: 131px;
-  z-index: 39;
-}

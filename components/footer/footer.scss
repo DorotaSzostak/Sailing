@@ -28,7 +28,7 @@ footer {
             }
         }
         
-        h4 {
+        .newsletter--title {
             text-transform: uppercase;
             font-weight: bold;
             padding-bottom: 5px;
@@ -60,12 +60,12 @@ footer {
              padding: 10px 5px;
              
              .nav__links{
-       display: inline-block;
+        display: inline-block;
         margin-left: 10px;
         border-radius: 50%;
         background-color: #000;
         text-align: center;
-        width: 20x;
+        width: 20px;
         padding: 8px 10px;
         color: #fff;
         font-size: 20px;

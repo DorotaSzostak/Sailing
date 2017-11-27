@@ -1,8 +1,8 @@
 //fonts
-@font-face {
-    font-family: "Lato";
-    src: url("https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet");
-}
+
+//Google font
+@import  url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
 
 //Font Awesome
 $fa-font-path: "../node_modules/font-awesome/fonts";

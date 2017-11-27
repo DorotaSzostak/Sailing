@@ -12,17 +12,14 @@
     float: left;
     padding-right: 60px;
     padding-top: 20px;
-    &:after {
-        @include clearfix;
-    }
-    img { 
+    .logo { 
         width: 40px;
     }
     @include mQ(768px){
         position: absolute;
         top: 0;
         padding: 5px;
-        img {
+        .logo {
             width: 30px;
         }
     }
@@ -31,15 +28,11 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    ul {
+    .nav__text-items,
+    .nav__social-items,
+    .nav__language-items {
         padding-top: 20px;
-           li {
-               text-align: center;
-           }
-           a:hover {
-               color: red;
-               transition: color .3s ease;
-           }
+         
     }
    
 }
@@ -68,9 +61,13 @@
         text-decoration: none;
         text-transform: uppercase;
         font-size: 16px;
-        color:  rgba(30, 30, 30, 255);
         font-weight: bold;
+        color:  rgba(30, 30, 30, 255);
         letter-spacing: 1px;
+           &:hover {
+               color: red;
+               transition: color .3s ease;
+           }
           @include mQ(1200px){
         font-size: 12px;
     }
@@ -83,16 +80,16 @@
     justify-content: flex-end;
 
     .nav__links{
-       display: block;
+        display: block;
         margin-left: 10px;
         margin-bottom: 5px;
         border-radius: 50%;
         background-color: #000;
         text-align: center;
-        width: 14px;
-        padding: 10px 12px;
+        width: 20px;
+        padding: 8px 10px;
         color: #fff;
-        font-size: 16px;
+        font-size: 20px;
         &:hover {
             background-color: $title_red;
             color: #fff;
@@ -110,7 +107,7 @@
         background-color: $title_red;
         height: 10px;
         padding: 10px;
-        a {
+        .nav__links {
             color: #fff;
         }
     }

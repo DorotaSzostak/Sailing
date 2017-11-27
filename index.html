@@ -6,11 +6,11 @@
  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
  <link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="external_tools/slick-1.8.0/slick/slick.css">
 <link rel="stylesheet" type="text/css" href="external_tools/slick-1.8.0/slick/slick-theme.css">
     </head>
-<body>
     <header>
     <div class="nav">
     <div class="container">
@@ -21,7 +21,7 @@
       <span></span>
      </div>
      </div>
-    <a class="nav__logo" href="#"><img src="components/nav/src/logo_icon.png" alt="logo_icon"></a>
+    <a class="nav__logo" href="#"><img class="logo" src="components/nav/src/logo_icon.png" alt="logo_icon"></a>
     
     <div class="nav__wrapper" id="nav__mobile">
        <ul class="nav__text-items">
@@ -42,7 +42,7 @@
         </a></li>
     </ul>
     <ul class="nav__language-items">
-        <li><a class="nav--links" href="#">PL</a></li>
+        <li><a class="nav__links" href="#">PL</a></li>
     </ul>
      </div>
     
@@ -52,15 +52,15 @@
     <div class="banner">
         <div class="banner__text">
         <img src="components/banner/src/boat_icon.png" alt="sailing">
-        <h2>Extreme sailing</h2>
+        <h2 class="banner-title">Extreme sailing</h2>
         </div>
         <div class="banner__text">
         <img src="components/banner/src/team_icon.png" alt="team">
-        <h2>Team building</h2>
+        <h2 class="banner-title">Team building</h2>
         </div>
         <div class="banner__text">
         <img src="components/banner/src/hands_icon.png" alt="hands">
-        <h2>corporate hispitality</h2>
+        <h2 class="banner-title">corporate hispitality</h2>
         </div>
         </div>
 
@@ -223,22 +223,24 @@
             <p>REGON: 12345789</p>
         </div>
         <div class="newsletter">
-            <h4>NEWSLETTER</h4>
+            <h4 class="newsletter--title">NEWSLETTER</h4>
             <p>Zapisz się do newslettera</p>
             <input class="newsletter--input" type="email" name="email" placeholder="Wpisz swój adres email...">
             <button class="newsletter--button">OK</button>
         <div class="newsletter__icons">
-     <a class="nav__links fa fa-facebook" href="#"></a>
-            <a class="nav__links fa fa-youtube"  href="#"></a>
-        <a class="nav__links fa fa-instagram"  href="#"></a>
+             <a class="nav__links fa fa-facebook" href="#"></a>
+             <a class="nav__links fa fa-youtube"  href="#"></a>
+             <a class="nav__links fa fa-instagram"  href="#"></a>
         </div>
         <p class="copy">Website by EVG.group &copy; Copyright 2017 Sailing 360</p>
         </div>
     </div>
 </footer>
 
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script type="text/javascript" src="external_tools/slick-1.8.0/slick/slick.min.js"></script>
 <script src="scripts/slick.js"></script>
 <script src="scripts/container__slider.js"></script>
