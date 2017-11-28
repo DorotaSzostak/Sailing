@@ -3037,7 +3037,7 @@ section {
 .wydarzenia {
   background-color: #f0f0f0; }
 
-.text-box {
+.little-box {
   float: left;
   width: 30%;
   border: 2px solid #dedddd;
@@ -3049,21 +3049,21 @@ section {
   display: block;
   clear: both; }
   @media screen and (max-width: 485px) {
-    .text-box {
+    .little-box {
       display: block;
       width: 100%; } }
-  .text-box .text-box__list {
+  .little-box .little-box__list {
     padding: 20px; }
     @media screen and (max-width: 485px) {
-      .text-box .text-box__list {
+      .little-box .little-box__list {
         padding: 10px; } }
-    .text-box .text-box__list li {
+    .little-box .little-box__list .little-box--item {
       font-size: 16px;
       padding-bottom: 5px;
       padding-top: 5px;
       border-bottom: 2px solid #dedddd;
       font-weight: bold; }
-      .text-box .text-box__list li span {
+      .little-box .little-box__list .little-box--item .little-box--span {
         border: 1px solid #e50613;
         background-color: #e50613;
         color: #fff;
@@ -3072,7 +3072,7 @@ section {
         padding: 0 6px;
         float: right; }
       @media screen and (max-width: 768px) {
-        .text-box .text-box__list li {
+        .little-box .little-box__list .little-box--item {
           font-size: 12px; } }
 
 .video__slider {

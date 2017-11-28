@@ -2,7 +2,7 @@
     background-color: #f0f0f0;
 }
 
-.text-box {
+.little-box {
     float: left;
     width: 30%;
     border: 2px solid #dedddd;
@@ -15,18 +15,18 @@
         width: 100%;
        }
     
-    .text-box__list {
+    .little-box__list {
         padding: 20px;
          @include mQ(485px){
         padding: 10px;
        }
-    li {
+    .little-box--item {
         font-size: 16px;
         padding-bottom: 5px;
         padding-top: 5px;
         border-bottom: 2px solid #dedddd;
         font-weight: bold;
-        span {
+        .little-box--span {
             border: 1px solid $title_red;
             background-color: $title_red;
             color: #fff;
